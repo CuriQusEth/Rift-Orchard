@@ -1,0 +1,6 @@
+{
+  "name": "Rift Orchard",
+  "description": "A serene yet mystical farming and exploration game set in a fractured dimensional orchard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
