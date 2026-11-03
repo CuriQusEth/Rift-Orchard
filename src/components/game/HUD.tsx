@@ -3,6 +3,7 @@ import { useGameStore } from '../../lib/game/store';
 import { Dimension } from '../../lib/game/types';
 import { WalletConnectButton } from '../ui/WalletConnectButton';
 import { GMButton } from '../ui/GMButton';
+import { DenimStatusBadge } from '../ui/DenimStatusBadge';
 import { Leaf, Moon, Sun, Wind, Flame, Sprout, ShieldCheck } from 'lucide-react';
 import { cn } from '../../lib/utils';
 import { motion, AnimatePresence } from 'motion/react';
@@ -53,15 +54,18 @@ export function HUD() {
                     </div>
                 </div>
 
-                {/* Score & Wallet */}
-                <div className="flex flex-col items-end gap-3 pointer-events-auto">
-                    <div className="flex items-center gap-3 bg-black/30 backdrop-blur-md px-4 py-2 rounded-full border border-white/5 shadow-lg">
-                        <div className="flex flex-col items-end mr-2">
-                            <div className="text-[8px] text-slate-500 uppercase tracking-widest leading-none mb-1">Harmony Score</div>
-                            <div className="font-serif italic text-lg font-bold text-slate-200 leading-none">{score}</div>
+                {/* Score, Denim Status & Wallet */}
+                <div className="flex flex-col items-end gap-2 pointer-events-auto">
+                    <div className="flex items-center gap-2">
+                        <DenimStatusBadge />
+                        <div className="flex items-center gap-3 bg-black/30 backdrop-blur-md px-4 py-2 rounded-full border border-white/5 shadow-lg">
+                            <div className="flex flex-col items-end mr-2">
+                                <div className="text-[8px] text-slate-500 uppercase tracking-widest leading-none mb-1">Harmony Score</div>
+                                <div className="font-serif italic text-lg font-bold text-slate-200 leading-none">{score}</div>
+                            </div>
+                            <div className="h-6 w-px bg-white/10 mx-1"></div>
+                            <WalletConnectButton />
                         </div>
-                        <div className="h-6 w-px bg-white/10 mx-1"></div>
-                        <WalletConnectButton />
                     </div>
                     
                     {isConnected && score > 0 && (
