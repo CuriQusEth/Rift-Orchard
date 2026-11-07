@@ -38,11 +38,11 @@ Each plane possesses unique visual atmospheres, natural properties, and resonant
 
 ## ⚡ On-Chain Features & Base Denim Integration
 
-### 1. Base Denim 200ms Native Blocks
-- Fully migrated from Flashblocks to **Base Denim**.
-- Sub-second **200ms canonical block finality** without relying on deprecated `pending` block tags or preconfirmations.
+### 1. Base Denim 200ms Native Blocks (Mainnet Live)
+- Fully migrated from Flashblocks to **Base Denim**, activated on **Base Mainnet on November 5, 2026 at 18:00 UTC** (and Base Sepolia on October 21, 2026).
+- Sub-second **200ms canonical block finality** across Base Mainnet without relying on deprecated `pending` block tags or preconfirmations.
 - Zero-latency feedback on transactions with 200ms polling intervals.
-- Live block tracking badge in the HUD displaying real-time canonical block heights on Base and Base Sepolia.
+- Live block tracking badge in the HUD displaying real-time canonical block heights directly on Base Mainnet.
 
 ### 2. Smart Wallet & Batch Transactions (EIP-5792)
 - Seamless wallet connectivity via **Coinbase Smart Wallet** and standard injected providers.

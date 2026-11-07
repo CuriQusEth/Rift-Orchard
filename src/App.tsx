@@ -48,7 +48,7 @@ export default function App() {
 
                 <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-950/40 border border-blue-500/20 text-[9px] font-mono text-blue-300 uppercase tracking-widest mb-10 backdrop-blur-sm">
                     <span className="w-1.5 h-1.5 rounded-full bg-blue-400 shadow-[0_0_8px_#60a5fa] animate-pulse"></span>
-                    Base Denim · 200ms Native Blocks
+                    Base Mainnet Denim · 200ms Native Blocks
                 </div>
 
                 <motion.button
